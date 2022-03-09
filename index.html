@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Press+Start+2P&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="page-title">Conversor de Moedas</h1>
+        <p class=" page-subtitle">Converta valores em moeda estrangeira ou nacional!</p>
+        <div class="finalResults">
+            <p id="answerConversion"></p>
+        </div>
+        <div class="picture">
+        </div>
+        <div class="currency">
+            <!-- <input id="dolarReal" type="number" placeholder="Dólar/ReaL" step = "0.1" min="0"/>
+            <input id="euroReal" type="number" placeholder="Euro/Real" step = "0.1" min="0"/>
+            <input id="realDolar" type="number" placeholder="Real/Dólar" step = "0.1" min="0"/>
+            <input id="realEuro" type="number" placeholder="Real/Euro" step = "0.1" min="0"/> -->
+            <select id="conversion" name="conversion">
+                <option value="dolarReal">Dólar/ReaL</option>
+                <option value="euroReal" selected>Euro/Real</option>
+                <option value="realDolar">Real/Dólar</option>
+                <option value="realEuro">Real/Euro</option>
+              </select>
+              <input id="currencyValue" type="number" placeholder="Digite o valor" step = "0.1" min="0"/>
+            <button class = "button" onclick= "convertCurrency()">Converter!</button>
+        </div>
+    </main>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="alura-logo" alt=""><br><br>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
